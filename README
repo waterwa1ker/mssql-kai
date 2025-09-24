@@ -1,0 +1,13 @@
+# Креды
+
+pass=Qwerty1!
+
+# Пример запросов
+
+```bash
+sqlcmd -U sa -P Qwerty1! -d librarydb
+```
+
+```bash
+sqlcmd -U sa -P Qwerty1! -d librarydb -Q "SELECT * FROM Readers where readerid = 1" -o result
+```

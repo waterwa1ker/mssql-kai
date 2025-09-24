@@ -1,0 +1,3 @@
+<row title="War and Peace" lastname="Tolstoy" loanid="1" loandate="2024-01-15" reader_email="ivan@mail.ru"/><row title="Crime and Punishment" lastname="Dostoevsky" loanid="2" loandate="2024-01-20" reader_email="maria@yandex.ru"/><row title="The Cherry Orchard" lastname="Chekhov" loanid="3" loandate="2024-01-25" reader_email="alex@mail.ru"/><row title="Eugene Onegin" lastname="Pushkin" loanid="5" loandate="2024-02-05" reader_email="dmitry@yahoo.com"/><row title="Dead Souls" lastname="Gogol" loanid="6" loandate="2024-02-10" reader_email="ivan@mail.ru"/>
+
+(1 rows affected)
