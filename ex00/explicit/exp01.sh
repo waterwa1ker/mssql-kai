@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-HEIGHT=1200
+HEIGHT=1800
 
 source ~/.zshrc
 

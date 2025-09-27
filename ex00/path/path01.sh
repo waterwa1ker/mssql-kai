@@ -1,7 +1,7 @@
 #!/bin/zsh
 
-HEIGHT=500
+HEIGHT=600
 
 source ~/.zshrc
 
-sqlcmd -d librarydb -i path01.sql -y $HEIGHT -o ../files/path01.xml
+sqlcmd -d librarydb -i path01.sql -h -1 -y $HEIGHT -o ../files/path01.xml
