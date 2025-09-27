@@ -1,0 +1,35 @@
+-- Устанавливаем правильные настройки
+SET QUOTED_IDENTIFIER ON;
+SET ANSI_NULLS ON;
+SET ANSI_PADDING ON;
+SET ANSI_WARNINGS ON;
+SET ARITHABORT ON;
+SET CONCAT_NULL_YIELDS_NULL ON;
+SET NUMERIC_ROUNDABORT OFF;
+GO
+
+-- Удаляем существующие объекты если они есть
+IF OBJECT_ID('dbo.fn_GetAuthorAvgPrice', 'FN') IS NOT NULL
+    DROP FUNCTION dbo.fn_GetAuthorAvgPrice;
+IF OBJECT_ID('dbo.fn_GetDaysSinceLoan', 'FN') IS NOT NULL
+    DROP FUNCTION dbo.fn_GetDaysSinceLoan;
+IF OBJECT_ID('dbo.fn_GetAuthorName', 'FN') IS NOT NULL
+    DROP FUNCTION dbo.fn_GetAuthorName;
+IF OBJECT_ID('dbo.fn_GetBooksByAuthorAndYear', 'IF') IS NOT NULL
+    DROP FUNCTION dbo.fn_GetBooksByAuthorAndYear;
+IF OBJECT_ID('dbo.fn_GetActiveLoansByReader', 'IF') IS NOT NULL
+    DROP FUNCTION dbo.fn_GetActiveLoansByReader;
+IF OBJECT_ID('dbo.fn_GetBooksByPriceRange', 'IF') IS NOT NULL
+    DROP FUNCTION dbo.fn_GetBooksByPriceRange;
+IF OBJECT_ID('dbo.fn_GetAuthorStatistics', 'TF') IS NOT NULL
+    DROP FUNCTION dbo.fn_GetAuthorStatistics;
+IF OBJECT_ID('dbo.fn_GetReaderDetailedStats', 'TF') IS NOT NULL
+    DROP FUNCTION dbo.fn_GetReaderDetailedStats;
+IF OBJECT_ID('dbo.sp_AddBook', 'P') IS NOT NULL
+    DROP PROCEDURE dbo.sp_AddBook;
+IF OBJECT_ID('dbo.sp_LoanBook', 'P') IS NOT NULL
+    DROP PROCEDURE dbo.sp_LoanBook;
+IF OBJECT_ID('dbo.sp_ReturnBook', 'P') IS NOT NULL
+    DROP PROCEDURE dbo.sp_ReturnBook;
+GO
+
